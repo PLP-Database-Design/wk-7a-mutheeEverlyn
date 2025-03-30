@@ -14,13 +14,13 @@ CREATE TABLE OrderProducts (
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE CASCADE
 );
 
--- Insert data into Orders table
+-- Inserting data into Orders table
 INSERT INTO Orders (OrderID, CustomerName) VALUES
 (101, 'John Doe'),
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
--- Insert data into OrderProducts table
+-- Inserting data into OrderProducts table
 INSERT INTO OrderProducts (OrderID, Product) VALUES
 (101, 'Laptop'),
 (101, 'Mouse'),
@@ -46,13 +46,13 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE CASCADE
 );
 
--- Insert data into Orders table
+-- Inserting data into Orders table
 INSERT INTO Orders (OrderID, CustomerName) VALUES
 (101, 'John Doe'),
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
--- Insert data into OrderDetails table
+-- Inserting data into OrderDetails table
 INSERT INTO OrderDetails (OrderID, Product, Quantity) VALUES
 (101, 'Laptop', 2),
 (101, 'Mouse', 1),
